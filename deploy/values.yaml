@@ -19,7 +19,7 @@ image:
 # @default -- See below
 env:
   # -- Set the container timezone
-  TZ: AEST
+  TZ: "Australia/Brisbane"
   # ADVERTISE_IP:
   # ALLOWED_NETWORKS:
   # PLEX_CLAIM:
