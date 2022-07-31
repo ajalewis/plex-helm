@@ -20,6 +20,10 @@ image:
 env:
   # -- Set the container timezone
   TZ: "Australia/Brisbane"
+  PLEX_PREFERENCE_1: "DlnaEnabled=1"
+  PLEX_PREFERENCE_2: "FriendlyName=plex-local"
+  PLEX_PREFERENCE_3: "allowMediaDeletion=1"
+  PLEX_PREFERENCE_4: "DlnaDeviceDiscoveryInterval=60"
   # ADVERTISE_IP:
   # ALLOWED_NETWORKS:
   # PLEX_CLAIM:
