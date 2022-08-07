@@ -26,7 +26,7 @@ env:
   PLEX_PREFERENCE_4: "DlnaDeviceDiscoveryInterval=60"
   ADVERTISE_IP: "http://192.168.1.210"
   # ALLOWED_NETWORKS:
-  PLEX_CLAIM: "claim-TDN2ZfYxYrJx_HqiD5C1"
+  PLEX_CLAIM: "claim-UGpzsxtX_eyP-sP_dBq_"
   # PLEX_PREFERENCE_1: "FriendlyName=plex-kubernetes"
   # PLEX_PREFERENCE_2: "EnableIPv6=0"
   # PLEX_PREFERENCE_3: "logDebug=0"
