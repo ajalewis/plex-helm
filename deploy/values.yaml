@@ -97,6 +97,11 @@ persistence:
   transcode:
     enabled: false
     mountPath: /transcode
+  
+  plex-movies:
+    enabled: true
+    mountPath: /plex-movies
+    size: 10Gi
 
 # -- Configure the Security Context for the Pod
 podSecurityContext: {}
