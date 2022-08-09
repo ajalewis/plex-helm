@@ -91,12 +91,17 @@ hostNetwork: false
 # @default -- See values.yaml
 persistence:
   config:
-    enabled: false
+    enabled: true
     mountPath: /config
 
   transcode:
-    enabled: true
+    enabled: false
     mountPath: /transcode
+  
+  plex-movies:
+    enabled: true
+    mountPath: /plex-movies
+    size: 10Gi
 
 # -- Configure the Security Context for the Pod
 podSecurityContext: {}
