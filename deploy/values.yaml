@@ -98,10 +98,11 @@ persistence:
     enabled: false
     mountPath: /transcode
   
-  plex-movies:
+  movie-storage:
     enabled: true
     mountPath: /plex-movies
     size: 10Gi
+    accessMode: ReadWriteOnce
 
 # -- Configure the Security Context for the Pod
 podSecurityContext: {}
