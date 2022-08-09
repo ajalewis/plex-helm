@@ -91,11 +91,11 @@ hostNetwork: false
 # @default -- See values.yaml
 persistence:
   config:
-    enabled: true
+    enabled: false
     mountPath: /config
 
   transcode:
-    enabled: false
+    enabled: true
     mountPath: /transcode
 
 # -- Configure the Security Context for the Pod
