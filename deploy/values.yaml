@@ -11,7 +11,7 @@ env:
   PLEX_PREFERENCE_4: "FSEventLibraryUpdatesEnabled=1"
   ADVERTISE_IP: "http://192.168.1.210"
   # ALLOWED_NETWORKS:
-  PLEX_CLAIM: "claim-yxLmmUTzivmJs9x97Ys6"
+  #PLEX_CLAIM: "claim-yxLmmUTzivmJs9x97Ys6"
   # PLEX_PREFERENCE_1: "FriendlyName=plex-kubernetes"
   # PLEX_PREFERENCE_2: "EnableIPv6=0"
   # PLEX_PREFERENCE_3: "logDebug=0"
@@ -75,7 +75,7 @@ persistence:
     mountPath: /plex-movies
     size: 10Gi
     accessMode: ReadWriteOnce
-    existingClaim: plex-tv-storage
+    existingClaim: movie-storage-pvc
     readOnly: true
 
 podSecurityContext: {}
