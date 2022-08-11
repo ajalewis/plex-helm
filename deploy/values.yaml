@@ -66,6 +66,7 @@ persistence:
     enabled: true
     mountPath: /config
     size: 1Gi
+    existingClaim: plex-config
 
   transcode:
     enabled: false
