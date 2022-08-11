@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: main-pv
+  name: movie-storage-pvc
   namespace: plex
 spec:
   accessModes:
