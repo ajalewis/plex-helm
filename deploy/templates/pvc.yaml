@@ -10,16 +10,6 @@ spec:
     requests:
       storage: 10Gi
   storageClassName: microk8s-hostpath
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: plex-config
-  namespace: plex
-spec:
-  accessModes:
-  - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
-  storageClassName: microk8s-hostpath
+  selector: 
+    matchLabels: 
+      volume-type: plex-storage
