@@ -65,6 +65,7 @@ persistence:
   config:
     enabled: true
     mountPath: /config
+    size: 1Gi
 
   transcode:
     enabled: false
@@ -76,7 +77,6 @@ persistence:
     size: 10Gi
     accessMode: ReadWriteOnce
     existingClaim: movie-storage-pvc
-    readOnly: true
 
 podSecurityContext: {}
 
