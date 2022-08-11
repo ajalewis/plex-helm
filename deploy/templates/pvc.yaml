@@ -10,6 +10,3 @@ spec:
     requests:
       storage: 10Gi
   storageClassName: microk8s-hostpath
-  selector: 
-    matchLabels: 
-      volume-type: plex-storage
