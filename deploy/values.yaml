@@ -62,12 +62,13 @@ ingress:
 hostNetwork: false
 
 persistence:
-#  movie-storage:
-#    enabled: true
-#    mountPath: /plex-movies
-#    size: 10Gi
-#    accessMode: ReadWriteOnce
-#    existingClaim: movie-storage-pvc
+  movie-storage:
+    enabled: true
+    type: pvc
+    mountPath: /plex-movies
+    existingClaim: movie-storage-pvc
+    accessMode: ReadWriteOnce    
+    size: 10Gi
 
   config:
     enabled: true
