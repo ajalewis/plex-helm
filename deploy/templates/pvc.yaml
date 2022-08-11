@@ -1,8 +1,6 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "-20"
   name: movie-storage-pvc
   namespace: plex
 spec:
@@ -12,3 +10,6 @@ spec:
     requests:
       storage: 10Gi
   storageClassName: microk8s-hostpath
+  selector:
+    matchLabels:
+      volume-type: plex-storage
