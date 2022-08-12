@@ -52,7 +52,7 @@ ingress:
   main:
     enabled: true
     hosts:
-        host: plex.local
+        host: "plex.local"
         paths:
             path: /
             pathType: Prefix
