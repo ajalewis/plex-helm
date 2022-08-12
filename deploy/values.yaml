@@ -52,13 +52,14 @@ ingress:
   main:
     enabled: true
     hosts:
-        host: "plex.local"
+      - host: "plex.local"
         paths:
-            path: /
-            pathType: Prefix
-            service:
-              name:
-              port: 32400
+        - path: /
+          pathType: Prefix
+          service:
+            name:
+            port: 32400
+
 hostNetwork: false
 
 persistence:
@@ -69,7 +70,6 @@ persistence:
     existingClaim: movie-storage-pvc
     accessMode: ReadWriteOnce    
     size: 10Gi
-    storageClass: null
 
   config:
     enabled: true
