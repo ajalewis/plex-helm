@@ -70,7 +70,6 @@ persistence:
     existingClaim: movie-storage-pvc
     accessMode: ReadWriteOnce    
     size: 10Gi
-    storageClass: null
 
   config:
     enabled: true
