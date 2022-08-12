@@ -67,7 +67,6 @@ persistence:
     enabled: true
     type: pvc
     mountPath: /plex-movies
-    existingClaim: movie-storage-pvc
     accessMode: ReadWriteOnce    
 
   config:
