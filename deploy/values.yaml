@@ -69,7 +69,6 @@ persistence:
     mountPath: /plex-movies
     existingClaim: movie-storage-pvc
     accessMode: ReadWriteOnce    
-    size: 10Gi
 
   config:
     enabled: true
